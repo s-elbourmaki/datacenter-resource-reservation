@@ -1,0 +1,57 @@
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: [
+                'resources/css/layouts/app.css',
+                'resources/css/auth/login.css',
+                'resources/css/auth/forgot-password.css',
+                'resources/css/auth/reset-password.css',
+                'resources/css/dashboard.css',
+                'resources/css/about.css',
+                'resources/css/resources/manager.css',
+                'resources/css/resources/create.css',
+                'resources/css/resources/index.css',
+                'resources/css/resources/edit.css',
+                'resources/css/reservations/index.css',
+                'resources/css/reservations/manager.css',
+                'resources/css/reservations/history.css',
+                'resources/css/profile.css',
+                'resources/js/profile.js',
+                'resources/css/incidents/manager.css',
+                'resources/js/incidents/manager.js',
+                'resources/css/reservations/create.css',
+                'resources/css/admin/logs.css',
+                'resources/css/admin/users.css',
+                'resources/css/admin/rack_map.css',
+                'resources/js/app.js',
+                'resources/js/theme-init.js',
+                'resources/js/layouts/app.js',
+                'resources/js/auth/login.js',
+                'resources/js/admin/dashboard.js',
+                'resources/js/admin/users.js',
+                'resources/js/admin/logs.js',
+                'resources/js/reservations/create.js',
+                'resources/js/reservations/index.js',
+                'resources/js/notifications/index.js',
+                'resources/js/incidents/manager.js',
+                'resources/js/about.js',
+                // Refactored Assets
+                'resources/css/engineer/dashboard.css',
+                'resources/css/admin/dashboard.css', // [NEW] Admin Dashboard CSS
+                'resources/css/reservations/manager_hub.css',
+                'resources/js/reservations/manager_hub.js',
+                'resources/css/partials/command_palette.css',
+                'resources/js/partials/command_palette.js',
+                'resources/css/reservations/calendar.css',
+                'resources/js/reservations/calendar.js',
+                'resources/css/resources/print.css',
+                'resources/js/resources/print.js',
+                'resources/js/partials/flash.js',
+            ],
+            refresh: true,
+        }),
+    ],
+});

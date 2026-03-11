@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Resource extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'type',
+        'category',
+        'cpu',
+        'ram',
+        'status', // disponible, maintenance, désactivée
+        'manager_id',
+        'maintenance_start', // NOUVEAU : Pour point 4.4
+        'maintenance_end',   // NOUVEAU : Pour point 4.4
+        'rack_position'      // NOUVEAU : Pour point 4.5 (Rack Map)
+    ];
+
+    protected $casts = [
+        'maintenance_start' => 'datetime',
+        'maintenance_end' => 'datetime',
+    ];
+
+    public function manager()
+    {
+        return $this->belongsTo(User::class, 'manager_id');
+    }
+
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class);
+    }
+
+    public function incidents()
+    {
+        return $this->hasMany(Incident::class);
+    }
+}
