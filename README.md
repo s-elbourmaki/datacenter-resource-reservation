@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="public/images/logo_bughazdigital.png" alt="Bughaz Digital Logo" width="130"/>
+<img src="public/images/logo_bughazdigital.png" alt="Bughaz Digital Logo" width="160"/>
 
-# 🏢 Bughaz Digital — Datacenter Resource Reservation
+# Bughaz Digital — Datacenter Resource Reservation
 
 **Plateforme de gestion et de réservation de ressources datacenter**
 
