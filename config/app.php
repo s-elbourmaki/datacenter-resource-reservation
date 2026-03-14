@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'DataHub'),
+    'name' => env('APP_NAME', 'Bughaz Digital'),
 
     /*
     |--------------------------------------------------------------------------

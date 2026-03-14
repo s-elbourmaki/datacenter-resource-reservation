@@ -8,7 +8,7 @@
     <div class="page-header resource-catalog-header">
         <div>
             <h1 class="page-title">Catalogue des <span>Ressources</span></h1>
-            <p class="page-subtitle resource-catalog-subtitle">Consultez la disponibilité en temps réel sur DataHub.</p>
+            <p class="page-subtitle resource-catalog-subtitle">Consultez la disponibilité en temps réel sur Bughaz Digital.</p>
         </div>
     </div>
 

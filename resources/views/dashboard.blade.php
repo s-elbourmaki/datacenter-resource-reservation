@@ -92,7 +92,7 @@
                 <i class="fas fa-info-circle" style="color: var(--primary);"></i> État de votre compte
             </h3>
             <p class="info-card-text">
-                Bienvenue dans le système de gestion DataHub.
+                Bienvenue dans le système de gestion Bughaz Digital.
                 @if(auth()->user()->role === 'user')
                     Vous avez actuellement <strong>{{ $myActiveReservations ?? 0 }}</strong> réservations actives.
                 @elseif(auth()->user()->role === 'responsable')

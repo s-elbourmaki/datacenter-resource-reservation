@@ -6,9 +6,9 @@
 
 @section('content')
     <div class="page-header section-header">
-        <h1 class="page-title" style="justify-content: center;">À Propos de <span>DataHub</span></h1>
+        <h1 class="page-title" style="justify-content: center;">À Propos de <span>Bughaz Digital</span></h1>
         <p class="page-subtitle about-subtitle">
-            Conditions générales d'accès et d'exploitation des ressources de DataHub.
+            Conditions générales d'accès et d'exploitation des ressources de Bughaz Digital.
         </p>
     </div>
 

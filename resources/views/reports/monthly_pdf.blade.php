@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Rapport Mensuel - DataHub</title>
+    <title>Rapport Mensuel - Bughaz Digital</title>
     <style>
         @page {
             margin: 0px;
@@ -163,7 +163,7 @@
     <div class="header-bg"></div>
 
     <div class="header">
-        <div class="logo">DataHub</div>
+        <div class="logo">Bughaz Digital</div>
         <div class="report-title">Rapport Mensuel d'Activité</div>
     </div>
 
