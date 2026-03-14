@@ -31,7 +31,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="#services" class="nav-link">Services</a></li>
-      <li><a href="#" class="nav-link">Consulter le catalogue</a></li>
+      <li><a href="{{ route('resources.index') }}" class="nav-link">Consulter le catalogue</a></li>
       <li><a href="#why" class="nav-link">Infrastructure</a></li>
       <li><a href="#locations" class="nav-link">Localisations</a></li>
       <li><a href="#certs" class="nav-link">Certifications</a></li>
@@ -50,7 +50,7 @@
 <!-- ═══════════ MOBILE MENU ═══════════ -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#services" class="mob-link">Services</a>
-  <a href="#" class="mob-link">Consulter le catalogue</a>
+  <a href="{{ route('resources.index') }}" class="mob-link">Consulter le catalogue</a>
   <a href="#why" class="mob-link">Infrastructure</a>
   <a href="#locations" class="mob-link">Localisations</a>
   <a href="#certs" class="mob-link">Certifications</a>
