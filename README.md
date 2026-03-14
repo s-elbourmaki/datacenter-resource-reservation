@@ -6,14 +6,9 @@
 
 **Plateforme de gestion et de réservation de ressources datacenter**
 
-
-
-![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-8.4-777BB4?style=flat-square&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat-square&logo=vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![D3.js](https://img.shields.io/badge/D3.js-7.x-F9A03C?style=flat-square&logo=d3.js&logoColor=white)
+<p>
+  <img src="https://skillicons.dev/icons?i=laravel,php,mysql,vite,js,html,css,git,linux" />
+</p>
 
 [![GitHub](https://img.shields.io/badge/GitHub-s--elbourmaki-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/s-elbourmaki/datacenter-resource-reservation)
 
