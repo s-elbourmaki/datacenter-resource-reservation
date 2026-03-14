@@ -129,4 +129,4 @@ L'application suit les meilleures pratiques de développement moderne :
 > [!IMPORTANT]
 > Ce projet démontre la capacité d'intégrer des technologies modernes pour résoudre des problématiques d'infrastructure réelles, tout en respectant les standards académiques les plus élevés.
 
-**Réalisé par Homam Dany - IDAI FST Tanger**
+**Réalisé par s-elbourmaki**

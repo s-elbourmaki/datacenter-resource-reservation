@@ -1,0 +1,55 @@
+/* resources/css/nexcore-theme.css */
+:root {
+    /* --- NEXCORE COLORS --- */
+    --nc-red:      #D42B2B;
+    --nc-red-dark: #B02020;
+    --nc-white:    #FFFFFF;
+    --nc-ice:      #A8D4DC;
+    --nc-ice-light:#DCF0F4;
+    --nc-ice-pale: #EBF6F9;
+    --nc-steel:    #3A7BA8;
+    --nc-navy:     #1A2F52;
+    --nc-navy-dk:  #0F1D35;
+    --nc-muted:    #5E7A9A;
+    --nc-grey-bg:  #F4F6F9;
+
+    /* --- MAPPING TO SYSTEM VARIABLES --- */
+    --primary: var(--nc-steel);
+    --primary-dark: var(--nc-navy);
+    --primary-light: var(--nc-ice);
+
+    --success: #2ecc71;
+    --warning: #f1c40f;
+    --danger: var(--nc-red);
+    --info: var(--nc-steel);
+
+    --bg-main: var(--nc-grey-bg);
+    --bg-card: var(--nc-white);
+    --bg-hover: var(--nc-ice-pale);
+    --bg-input: var(--nc-white);
+
+    --text-primary: var(--nc-navy);
+    --text-secondary: var(--nc-muted);
+    --text-muted: #8ea2b8;
+
+    --border-color: rgba(168, 212, 220, 0.4);
+
+    /* --- FONTS --- */
+    --font-main: 'Barlow', sans-serif;
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-condensed: 'Barlow Condensed', sans-serif;
+}
+
+/* --- DARK MODE OVERRIDES (NexCore Style) --- */
+[data-theme='dark'] {
+    --bg-main: var(--nc-navy-dk);
+    --bg-card: var(--nc-navy);
+    --bg-hover: rgba(168, 212, 220, 0.05);
+    --bg-input: rgba(15, 29, 53, 0.5);
+
+    --text-primary: var(--nc-ice-pale);
+    --text-secondary: var(--nc-ice);
+    --text-muted: var(--nc-muted);
+
+    --border-color: rgba(168, 212, 220, 0.15);
+}

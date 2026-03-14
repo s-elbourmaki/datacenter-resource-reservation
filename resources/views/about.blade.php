@@ -59,67 +59,18 @@
         <div class="card team-member-card">
             <div class="card-body member-info">
                 <div class="team-image-wrapper">
-                    <img src="{{ asset('images/team/dany.jpg') }}" alt="Dany Homam"
-                        onerror="this.src='https://ui-avatars.com/api/?name=Dany+Homam&background=0284c7&color=fff'">
+                    <img src="{{ asset('images/team/salim.jpeg') }}" alt="Salim El Bourmaki"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Salim+El+Bourmaki&background=0284c7&color=fff'">
                 </div>
-                <h3 class="member-name">Dany Homam</h3>
-                <p class="member-role admin-role">Administrateur Système</p>
-                <a href="mailto:dany.homam@etu.uae.ac.ma" class="btn btn-outline btn-contact">
-                    <i class="far fa-envelope"></i> Contacter Homam
+                <h3 class="member-name">Salim El Bourmaki</h3>
+                <p class="member-role admin-role">Administrateur DataCenter</p>
+                <a href="mailto:salim.elbourmaki@etu.uae.ac.ma" class="btn btn-outline btn-contact">
+                    <i class="far fa-envelope"></i> Contacter Salim
                 </a>
             </div>
         </div>
     </div>
-
-    <!-- Technical Team Section -->
-    <h2 class="team-section-title">Équipe Technique</h2>
-    <!-- Container for the Marquee -->
-    <div class="team-marquee-wrapper">
-        <div id="teamGrid" class="team-grid-container">
-            <!-- Salim -->
-            <div class="card team-member-card">
-                <div class="card-body member-info">
-                    <div class="team-image-wrapper">
-                        <img src="{{ asset('images/team/salim.jpeg') }}" alt="El Bourmaki Salim"
-                            onerror="this.src='https://ui-avatars.com/api/?name=Salim+El+Bourmaki&background=64748b&color=fff'">
-                    </div>
-                    <h3 class="member-name">El Bourmaki Salim</h3>
-                    <p class="member-role">Responsable Technique</p>
-                    <a href="mailto:elbourmaki.salim@etu.uae.ac.ma" class="btn btn-outline btn-contact">
-                        <i class="far fa-envelope"></i> Contacter Salim
-                    </a>
-                </div>
-            </div>
-
-            <!-- Houssam -->
-            <div class="card team-member-card">
-                <div class="card-body member-info">
-                    <div class="team-image-wrapper">
-                        <img src="{{ asset('images/team/houssam.png') }}" alt="El Hajioui Houssam"
-                            onerror="this.src='https://ui-avatars.com/api/?name=Houssam+El+Hajioui&background=64748b&color=fff'">
-                    </div>
-                    <h3 class="member-name">El Hajioui Houssam</h3>
-                    <p class="member-role">Responsable Technique</p>
-                    <a href="mailto:houssam.elhajioui@etu.uae.ac.ma" class="btn btn-outline btn-contact">
-                        <i class="far fa-envelope"></i> Contacter Houssam
-                    </a>
-                </div>
-            </div>
-
-            <!-- Fatima -->
-            <div class="card team-member-card">
-                <div class="card-body member-info">
-                    <div class="team-image-wrapper">
-                        <img src="{{ asset('images/team/fatima.jpg') }}" alt="Farssi Fatima Zahra"
-                            onerror="this.src='https://ui-avatars.com/api/?name=Fatima+Zahra+Farssi&background=64748b&color=fff'">
-                    </div>
-                    <h3 class="member-name">Farssi Fatima Zahra</h3>
-                    <p class="member-role">Responsable Technique</p>
-                    <a href="mailto:farssi.fatimazahra@etu.uae.ac.ma" class="btn btn-outline btn-contact">
-                        <i class="far fa-envelope"></i> Contacter Fatima
-                    </a>
-                </div>
-            </div>
+    
         </div>
     </div>
 

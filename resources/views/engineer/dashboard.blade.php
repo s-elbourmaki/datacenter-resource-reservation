@@ -11,24 +11,20 @@
         <div class="page-header dashboard-header">
             <div>
                 <h1 class="dashboard-title">
-                    <span
-                        style="color: var(--text-primary);">Dashboard - Espace
-                        Responsable</span>
+                    <span>Dashboard - Espace Responsable</span>
                 </h1>
                 <p class="dashboard-subtitle">Gestion temps réel de votre parc informatique.</p>
             </div>
             <div style="display: flex; gap: 12px;">
-                <a href="{{ route('reservations.manager') }}" class="btn"
-                    style="background: white; color: var(--text-primary); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); font-weight: 600; position: relative;">
-                    <i class="fas fa-inbox" style="margin-right: 8px; color: var(--text-secondary);"></i>
+                <a href="{{ route('reservations.manager') }}" class="btn btn-header-secondary">
+                    <i class="fas fa-inbox"></i>
                     Demandes
                     @if($stats['pending_requests'] > 0)
                         <span class="notification-badge">{{ $stats['pending_requests'] }}</span>
                     @endif
                 </a>
-                <a href="{{ route('resources.create') }}" class="btn"
-                    style="background: var(--primary-gradient); color: white; border: none; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);">
-                    <i class="fas fa-plus" style="margin-right: 8px;"></i> Nouveau Serveur
+                <a href="{{ route('resources.create') }}" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Nouveau Serveur
                 </a>
             </div>
         </div>
@@ -40,16 +36,15 @@
                 <p class="stat-card-label">Serveurs Gérés</p>
                 <div class="stat-card-body">
                     <h2 class="stat-card-value">{{ $stats['total_managed'] }}</h2>
-                    <div class="stat-card-icon-wrapper" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">
+                    <div class="stat-card-icon-wrapper stat-icon-total">
                         <i class="fas fa-server"></i>
                     </div>
                 </div>
                 <div class="stat-progress-container">
-                    <div class="stat-progress-bar"
-                        style="width: {{ $stats['occupancy_rate'] }}%; background: var(--primary-gradient);"></div>
+                    <div class="stat-progress-bar" style="width: {{ $stats['occupancy_rate'] }}%;"></div>
                 </div>
-                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 8px; font-weight: 500;">
-                    <span style="color: #10b981;">{{ $stats['occupancy_rate'] }}%</span> Occupation
+                <p class="stat-card-footer-text">
+                    <span class="status-ok-text">{{ $stats['occupancy_rate'] }}%</span> Occupation
                 </p>
             </div>
 
@@ -58,11 +53,11 @@
                 <p class="stat-card-label">En Maintenance</p>
                 <div class="stat-card-body">
                     <h2 class="stat-card-value">{{ $stats['maintenance_mode'] }}</h2>
-                    <div class="stat-card-icon-wrapper" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">
+                    <div class="stat-card-icon-wrapper stat-icon-maintenance">
                         <i class="fas fa-tools"></i>
                     </div>
                 </div>
-                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: auto; padding-top: 10px;">
+                <p class="stat-card-footer-text">
                     Interventions en cours</p>
             </div>
 
@@ -71,11 +66,11 @@
                 <p class="stat-card-label">Incidents Actifs</p>
                 <div class="stat-card-body">
                     <h2 class="stat-card-value" style="color: #ef4444;">{{ $stats['active_incidents'] }}</h2>
-                    <div class="stat-card-icon-wrapper" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">
+                    <div class="stat-card-icon-wrapper stat-icon-incident-large">
                         <i class="fas fa-exclamation-triangle"></i>
                     </div>
                 </div>
-                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: auto; padding-top: 10px;">Requiert
+                <p class="stat-card-footer-text alert-text">Requiert
                     attention immédiate</p>
             </div>
         </div>
@@ -119,7 +114,7 @@
                         @endphp
                         <a href="{{ route('resources.edit', $res->id) }}" class="server-card {{ $statusClass }}"
                             title="{{ $res->name }}">
-                            <div class="server-icon-wrapper" style="color: {{ $iconColor }}">
+                            <div class="server-icon-wrapper">
                                 <i class="fas {{ $icon }}"></i>
                             </div>
                             <div class="server-name">{{ $res->name }}</div>

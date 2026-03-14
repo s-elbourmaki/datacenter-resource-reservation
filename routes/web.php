@@ -13,7 +13,7 @@ use App\Http\Controllers\IncidentController;
 |--- 1. ROUTES PUBLIQUES ---
 */
 Route::get('/', function () {
-    return redirect()->route('login');
+    return view('home');
 });
 Route::get('/catalogue', [ResourceController::class, 'index'])->name('resources.index');
 Route::get('/catalogue/{resource}', [ResourceController::class, 'show'])->name('resources.show');

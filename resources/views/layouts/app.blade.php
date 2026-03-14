@@ -8,9 +8,11 @@
     <title>{{ config('app.name', 'DataHub') }}</title>
     <link rel="icon" href="{{ asset('logo.png') }}">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+
     <!-- CSS -->
-    @vite(['resources/css/layouts/app.css'])
-    @vite(['resources/css/partials/command_palette.css'])
+    @vite(['resources/css/nexcore-theme.css', 'resources/css/layouts/app.css', 'resources/css/partials/command_palette.css'])
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -27,9 +29,15 @@
             <!-- Logo & Brand -->
             <a href="{{ auth()->check() && auth()->user()->role === 'admin' ? route('admin.dashboard') : route('dashboard') }}"
                 class="navbar-brand">
-                <img src="{{ asset('logo.png') }}" alt="DataHub Logo" class="navbar-logo-img"
-                    style="height: 40px; margin-right: 10px;">
-                <span class="navbar-title">Data<span>Hub</span></span>
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" class="navbar-logo-svg">
+                    <rect x="2" y="7"  width="30" height="6" rx="1" fill="#3A7BA8" opacity=".65"/>
+                    <rect x="2" y="14" width="30" height="6" rx="1" fill="#3A7BA8" opacity=".82"/>
+                    <rect x="2" y="21" width="30" height="6" rx="1" fill="#3A7BA8"/>
+                    <circle cx="27" cy="10" r="1.4" fill="#2ecc71"/>
+                    <circle cx="27" cy="17" r="1.4" fill="#A8D4DC"/>
+                    <circle cx="27" cy="24" r="1.4" fill="#D42B2B"/>
+                </svg>
+                <span class="navbar-title">NEX<span>CORE</span></span>
             </a>
 
             <!-- Navigation Links -->
@@ -213,7 +221,8 @@
 
     <!-- FOOTER -->
     <footer class="main-footer">
-        <p>&copy; {{ date('Y') }} - Gestion de Ressources Data Center IDAI</p>
+        <p>&copy; {{ date('Y') }} - Gestion de Ressources Data Center</p>
+        <p> Created with fun by: Salim El Bourmaki</p>
     </footer>
 
     <!-- Scripts -->

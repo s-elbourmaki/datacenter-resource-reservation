@@ -1,156 +1,73 @@
-/* ==========================================================================
-   STATISTIQUES
-   ========================================================================== */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
-}
+/* resources/css/dashboard.css - NexCore Harmonization */
 
-.stat-card {
-    background: var(--bg-card);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-lg);
-    box-shadow: var(--shadow-md);
-    border-left: 4px solid;
-    transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
-}
-
-.stat-card.primary {
-    border-color: var(--primary);
-}
-
-.stat-card.success {
-    border-color: var(--success);
-}
-
-.stat-card.warning {
-    border-color: var(--warning);
-}
-
-.stat-card.danger {
-    border-color: var(--danger);
-}
-
-.stat-label {
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.5rem;
-}
-
-.stat-value {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--text-primary);
-    line-height: 1;
-}
-
-.stat-icon {
-    font-size: 2rem;
-    opacity: 0.2;
-    float: right;
-}
-
-/* ==========================================================================
-   TABLES
-   ========================================================================== */
-.table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table thead {
-    background: var(--bg-hover);
-}
-
-.table th {
-    padding: 1rem;
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--text-secondary);
-    border-bottom: 2px solid var(--border-color);
-}
-
-.table td {
-    padding: 1rem;
-    border-bottom: 1px solid var(--border-color);
-    color: var(--text-primary);
-}
-
-.table tbody tr:hover {
-    background: var(--bg-hover);
-}
-
-/* ==========================================================================
-   DASHBOARD CUSTOM STYLES (EXTRACTED)
-   ========================================================================== */
 .dashboard-wrapper {
-    padding: 20px;
+    padding: var(--spacing-lg);
 }
 
 .dashboard-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-xl);
 }
 
 .dashboard-title {
-    color: #1e293b;
-    font-size: 1.875rem;
-    font-weight: 800;
-    margin: 0;
-    letter-spacing: -0.025em;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+    line-height: 1;
 }
 
 .dashboard-subtitle {
-    color: #64748b;
+    font-family: var(--font-main);
+    color: var(--text-secondary);
+    font-weight: 300;
     margin-top: 0.5rem;
-    font-size: 1rem;
 }
 
 .dashboard-stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
+/* Stat Card NexCore Style */
 .stat-card-custom {
-    padding: 1.5rem;
-    background: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    border-radius: 16px;
+    background: var(--bg-card);
+    padding: 2rem;
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--nc-red);
+  transition: width .35s ease;
+}
+
+.stat-card-custom:hover::after {
+  width: 100%;
 }
 
 .stat-card-custom:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(26, 47, 82, 0.08);
 }
 
-
-
 .stat-card-label {
-    color: #64748b;
+    font-family: var(--font-condensed);
     font-size: 0.75rem;
-    text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
 }
 
 .stat-card-body {
@@ -160,81 +77,104 @@
 }
 
 .stat-card-value {
-    font-size: 2.2rem;
-    color: #1e293b;
-    font-weight: 800;
-    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--text-primary);
+    line-height: 1;
 }
 
 .stat-card-icon-wrapper {
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background: var(--nc-ice-pale);
+    color: var(--nc-steel);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    clip-path: polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%);
+    transition: background 0.3s, transform 0.3s;
 }
 
-.stat-card-icon-primary {
-    background: #eef2ff;
-    color: var(--primary);
-}
-
-.stat-card-icon-success {
-    background: #f0fdf4;
-    color: #10b981;
+.stat-card-custom:hover .stat-card-icon-wrapper {
+    background: var(--nc-ice-light);
+    transform: scale(1.1);
 }
 
 .stat-progress-container {
     width: 100%;
-    background: #f1f5f9;
-    height: 6px;
-    border-radius: 3px;
-    margin-top: 15px;
+    background: var(--nc-ice-pale);
+    height: 4px;
+    margin-top: 1.5rem;
+    overflow: hidden;
 }
 
 .stat-progress-bar {
-    background: var(--primary);
+    background: var(--nc-red);
     height: 100%;
-    border-radius: 3px;
+    transition: width 1s ease-out;
 }
 
+/* Info Card */
 .dashboard-info-card {
-    padding: 1.5rem;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
-    border: 1px solid #f1f5f9;
+    background: var(--bg-card);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
 }
 
 .info-card-title {
-    color: #1e293b;
-    margin-bottom: 1rem;
+    font-family: var(--font-condensed);
+    font-size: 1rem;
     font-weight: 700;
-    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .info-card-text {
-    color: #64748b;
-    line-height: 1.6;
+    font-family: var(--font-main);
+    color: var(--text-secondary);
+    font-weight: 300;
+    line-height: 1.8;
 }
 
-/* ==========================================================================
-   RESPONSIVE
-   ========================================================================== */
-@media (max-width: 768px) {
+.info-card-text strong {
+    font-weight: 700;
+    color: var(--nc-red);
+}
 
-    .stats-grid,
+/* Tables */
+.table th {
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--nc-steel);
+    border-bottom: 2px solid var(--nc-ice-light);
+}
+
+/* Dark mode specific tweaks */
+[data-theme='dark'] .stat-card-custom {
+    background: var(--nc-navy);
+}
+
+[data-theme='dark'] .stat-card-icon-wrapper {
+    background: rgba(168, 212, 220, 0.1);
+}
+
+[data-theme='dark'] .stat-progress-container {
+    background: rgba(15, 29, 53, 0.5);
+}
+
+@media (max-width: 768px) {
     .dashboard-stats-grid {
         grid-template-columns: 1fr;
     }
-}
-
-.empty-state {
-    text-align: center;
-    color: var(--text-muted);
+    .dashboard-title {
+        font-size: 2rem;
+    }
 }

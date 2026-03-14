@@ -5,6 +5,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
+                'resources/css/nexcore-theme.css',
                 'resources/css/layouts/app.css',
                 'resources/css/auth/login.css',
                 'resources/css/auth/forgot-password.css',
@@ -49,6 +50,8 @@ export default defineConfig({
                 'resources/js/reservations/calendar.js',
                 'resources/css/resources/print.css',
                 'resources/js/resources/print.js',
+                'resources/css/home.css',
+                'resources/js/home.js',
                 'resources/js/partials/flash.js',
             ],
             refresh: true,
