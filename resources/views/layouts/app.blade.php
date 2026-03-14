@@ -29,7 +29,7 @@
             <!-- Logo & Brand -->
             <a href="{{ auth()->check() && auth()->user()->role === 'admin' ? route('admin.dashboard') : route('dashboard') }}"
                 class="navbar-brand">
-                <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 35px; width: auto; margin-right: 10px;">
+                <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 55px; width: auto; margin-right: 12px;">
                 <span class="navbar-title">BUGHAZ<span>DIGITAL</span></span>
             </a>
 
@@ -49,7 +49,7 @@
                 <li>
                     <a href="{{ route('resources.index') }}"
                         class="{{ request()->routeIs('resources.index') ? 'active' : '' }}">
-                        <i class="fas fa-server"></i> Catalogue
+                        <i class="fas fa-server"></i> Consulter le catalogue
                     </a>
                 </li>
 

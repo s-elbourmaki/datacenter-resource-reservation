@@ -26,11 +26,12 @@
 <nav id="main-nav">
   <div class="nav-inner">
     <a href="{{ url('/') }}" class="logo">
-      <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 40px; width: auto; margin-right: 10px;">
+      <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 60px; width: auto; margin-right: 12px;">
       <span class="logo-text">BUGHAZ<span>DIGITAL</span></span>
     </a>
     <ul class="nav-links">
       <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#" class="nav-link">Consulter le catalogue</a></li>
       <li><a href="#why" class="nav-link">Infrastructure</a></li>
       <li><a href="#locations" class="nav-link">Localisations</a></li>
       <li><a href="#certs" class="nav-link">Certifications</a></li>
@@ -49,6 +50,7 @@
 <!-- ═══════════ MOBILE MENU ═══════════ -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#services" class="mob-link">Services</a>
+  <a href="#" class="mob-link">Consulter le catalogue</a>
   <a href="#why" class="mob-link">Infrastructure</a>
   <a href="#locations" class="mob-link">Localisations</a>
   <a href="#certs" class="mob-link">Certifications</a>
