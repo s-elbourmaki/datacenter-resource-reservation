@@ -6,9 +6,7 @@
 
 **Plateforme de gestion et de réservation de ressources datacenter**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=laravel,php,mysql,vite,js,html,css,git,linux" />
-</p>
+
 
 ![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.4-777BB4?style=flat-square&logo=php&logoColor=white)
