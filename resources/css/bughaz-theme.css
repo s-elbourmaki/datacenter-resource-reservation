@@ -1,6 +1,6 @@
-/* resources/css/nexcore-theme.css */
+/* resources/css/bughaz-theme.css */
 :root {
-    /* --- NEXCORE COLORS --- */
+    /* --- BUGHAZ DIGITAL COLORS --- */
     --nc-red:      #D42B2B;
     --nc-red-dark: #B02020;
     --nc-white:    #FFFFFF;
@@ -40,7 +40,7 @@
     --font-condensed: 'Barlow Condensed', sans-serif;
 }
 
-/* --- DARK MODE OVERRIDES (NexCore Style) --- */
+/* --- DARK MODE OVERRIDES (Bughaz Digital Style) --- */
 [data-theme='dark'] {
     --bg-main: var(--nc-navy-dk);
     --bg-card: var(--nc-navy);

@@ -5,7 +5,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/css/nexcore-theme.css',
+                'resources/css/bughaz-theme.css',
                 'resources/css/layouts/app.css',
                 'resources/css/auth/login.css',
                 'resources/css/auth/forgot-password.css',

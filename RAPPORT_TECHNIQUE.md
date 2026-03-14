@@ -1,4 +1,4 @@
-# 📑 RAPPORT TECHNIQUE D'INGÉNIERIE : DC-MANAGER v2.1
+# 📑 RAPPORT TECHNIQUE D'INGÉNIERIE : BUGHAZ DIGITAL v2.1
 
 ## 🏛️ MÉMOIRE DE CONCEPTION ET RÉALISATION
 
@@ -129,4 +129,4 @@ L'application suit les meilleures pratiques de développement moderne :
 > [!IMPORTANT]
 > Ce projet démontre la capacité d'intégrer des technologies modernes pour résoudre des problématiques d'infrastructure réelles, tout en respectant les standards académiques les plus élevés.
 
-**Réalisé par s-elbourmaki**
+**Réalisé par salim**

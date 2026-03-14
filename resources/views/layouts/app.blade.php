@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    @vite(['resources/css/nexcore-theme.css', 'resources/css/layouts/app.css', 'resources/css/partials/command_palette.css'])
+    @vite(['resources/css/bughaz-theme.css', 'resources/css/layouts/app.css', 'resources/css/partials/command_palette.css'])
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -29,15 +29,8 @@
             <!-- Logo & Brand -->
             <a href="{{ auth()->check() && auth()->user()->role === 'admin' ? route('admin.dashboard') : route('dashboard') }}"
                 class="navbar-brand">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" class="navbar-logo-svg">
-                    <rect x="2" y="7"  width="30" height="6" rx="1" fill="#3A7BA8" opacity=".65"/>
-                    <rect x="2" y="14" width="30" height="6" rx="1" fill="#3A7BA8" opacity=".82"/>
-                    <rect x="2" y="21" width="30" height="6" rx="1" fill="#3A7BA8"/>
-                    <circle cx="27" cy="10" r="1.4" fill="#2ecc71"/>
-                    <circle cx="27" cy="17" r="1.4" fill="#A8D4DC"/>
-                    <circle cx="27" cy="24" r="1.4" fill="#D42B2B"/>
-                </svg>
-                <span class="navbar-title">NEX<span>CORE</span></span>
+                <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 35px; width: auto; margin-right: 10px;">
+                <span class="navbar-title">BUGHAZ<span>DIGITAL</span></span>
             </a>
 
             <!-- Navigation Links -->

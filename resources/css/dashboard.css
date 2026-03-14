@@ -1,4 +1,4 @@
-/* resources/css/dashboard.css - NexCore Harmonization */
+/* resources/css/dashboard.css - Bughaz Digital Harmonization */
 
 .dashboard-wrapper {
     padding: var(--spacing-lg);
@@ -30,7 +30,7 @@
     margin-bottom: 2rem;
 }
 
-/* Stat Card NexCore Style */
+/* Stat Card Bughaz Digital Style */
 .stat-card-custom {
     background: var(--bg-card);
     padding: 2rem;

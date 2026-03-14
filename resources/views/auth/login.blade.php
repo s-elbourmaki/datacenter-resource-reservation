@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - NexCore DataCenter</title>
+    <title>Connexion - Bughaz Digital DataCenter</title>
     <link rel="icon" href="{{ asset('logo.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -15,15 +15,8 @@
         
         <!-- Brand Logo -->
         <a href="{{ url('/') }}" class="login-brand">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
-                <rect x="2" y="7"  width="30" height="6" rx="1" fill="#FFFFFF" opacity=".65"/>
-                <rect x="2" y="14" width="30" height="6" rx="1" fill="#FFFFFF" opacity=".82"/>
-                <rect x="2" y="21" width="30" height="6" rx="1" fill="#FFFFFF"/>
-                <circle cx="27" cy="10" r="1.4" fill="#2ecc71"/>
-                <circle cx="27" cy="17" r="1.4" fill="#A8D4DC"/>
-                <circle cx="27" cy="24" r="1.4" fill="#D42B2B"/>
-            </svg>
-            <span class="login-brand-text">NEX<span>CORE</span></span>
+            <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 40px; width: auto; margin-right: 10px;">
+            <span class="login-brand-text">BUGHAZ<span>DIGITAL</span></span>
         </a>
 
         <div class="forms-container">
@@ -95,16 +88,16 @@
                     <p>Déployez vos infrastructures en quelques clics sur notre réseau mondial ultra-performant.</p>
                     <button class="btn transparent" id="sign-up-btn">M'INSCRIRE</button>
                 </div>
-                <img src="{{ asset('images/log.png') }}" class="image" alt="NexCore Auth" />
+                <img src="{{ asset('images/log.png') }}" class="image" alt="Bughaz Digital Auth" />
             </div>
 
             <div class="panel right-panel">
                 <div class="content">
                     <h3>Déjà partenaire ?</h3>
-                    <p>Accédez à votre console de gestion NexCore pour piloter vos ressources critiques.</p>
+                    <p>Accédez à votre console de gestion Bughaz Digital pour piloter vos ressources critiques.</p>
                     <button class="btn transparent" id="sign-in-btn">ME CONNECTER</button>
                 </div>
-                <img src="{{ asset('images/register.png') }}" class="image" alt="NexCore Portal" />
+                <img src="{{ asset('images/register.png') }}" class="image" alt="Bughaz Digital Portal" />
             </div>
         </div>
     </div>

@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NexCore DataCenter — Infrastructure Mondiale</title>
+  <title>Bughaz Digital DataCenter — Infrastructure Mondiale</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 
-  @vite(['resources/css/home.css', 'resources/js/home.js'])
+  @vite(['resources/css/bughaz-theme.css', 'resources/css/home.css', 'resources/js/home.js'])
 
 </head>
 <body>
 
 <!-- ═══════════ PRELOADER ═══════════ -->
 <div class="preloader" id="preloader">
-  <div class="preloader-logo">NEX<span>CORE</span></div>
+  <div class="preloader-logo">
+    <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 60px; width: auto; margin-bottom: 10px;">
+    <div>BUGHAZ<span>DIGITAL</span></div>
+  </div>
   <div class="preloader-bar"><div class="preloader-fill"></div></div>
 </div>
 
@@ -23,18 +26,8 @@
 <nav id="main-nav">
   <div class="nav-inner">
     <a href="{{ url('/') }}" class="logo">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
-        <rect x="2" y="7"  width="30" height="6" rx="1" fill="#3A7BA8" opacity=".65"/>
-        <rect x="2" y="14" width="30" height="6" rx="1" fill="#3A7BA8" opacity=".82"/>
-        <rect x="2" y="21" width="30" height="6" rx="1" fill="#3A7BA8"/>
-        <circle cx="27" cy="10" r="1.4" fill="#2ecc71"/>
-        <circle cx="27" cy="17" r="1.4" fill="#A8D4DC"/>
-        <circle cx="27" cy="24" r="1.4" fill="#D42B2B"/>
-        <rect x="4" y="9" width="16" height="2" rx="1" fill="rgba(255,255,255,0.12)"/>
-        <rect x="4" y="16" width="12" height="2" rx="1" fill="rgba(255,255,255,0.12)"/>
-        <rect x="4" y="23" width="18" height="2" rx="1" fill="rgba(255,255,255,0.12)"/>
-      </svg>
-      <span class="logo-text">NEX<span>CORE</span></span>
+      <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 40px; width: auto; margin-right: 10px;">
+      <span class="logo-text">BUGHAZ<span>DIGITAL</span></span>
     </a>
     <ul class="nav-links">
       <li><a href="#services" class="nav-link">Services</a></li>
@@ -69,7 +62,7 @@
 <!-- ═══════════ HERO ═══════════ -->
 <section class="hero">
   <div id="map-container">
-    <svg id="world-map" aria-label="Carte mondiale des data centers NexCore"></svg>
+    <svg id="world-map" aria-label="Carte mondiale des data centers Bughaz Digital"></svg>
   </div>
   <!-- Map tooltip -->
   <div class="map-tooltip" id="mapTooltip">
@@ -127,7 +120,7 @@
     <h4>Légende</h4>
     <div class="legend-item">
       <div class="leg-dot" style="background:var(--red)"></div>
-      <span>Data Center NexCore</span>
+      <span>Data Center Bughaz Digital</span>
     </div>
     <div class="legend-item">
       <div class="leg-line" style="background:var(--steel)"></div>
@@ -314,7 +307,7 @@
   <div class="container">
     <div class="why-grid">
       <div class="reveal">
-        <div class="sec-label">Pourquoi NexCore</div>
+        <div class="sec-label">Pourquoi Bughaz Digital</div>
         <h2 class="sec-title">Infrastructure<br>Conçue Pour<br><span class="t-blue">La Continuité</span></h2>
         <p class="sec-desc">Chaque composant est dimensionné pour garantir la disponibilité de vos services critiques, sans compromis.</p>
         <div class="why-features">
@@ -494,7 +487,7 @@
       @else
         <a href="{{ route('login') }}" class="btn-primary">Démarrer Maintenant</a>
       @endauth
-      <a href="tel:+2125XXXXXXXX" class="btn-ice">+212 5XX-XXXXXX</a>
+      <a href="tel:+212754788193" class="btn-ice">+212 754788193</a>
     </div>
   </div>
 </div>
@@ -504,15 +497,8 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <div class="logo">
-        <svg width="30" height="30" viewBox="0 0 34 34" fill="none">
-          <rect x="2" y="7"  width="30" height="6" rx="1" fill="#3A7BA8" opacity=".65"/>
-          <rect x="2" y="14" width="30" height="6" rx="1" fill="#3A7BA8" opacity=".82"/>
-          <rect x="2" y="21" width="30" height="6" rx="1" fill="#3A7BA8"/>
-          <circle cx="27" cy="10" r="1.4" fill="#2ecc71"/>
-          <circle cx="27" cy="17" r="1.4" fill="#A8D4DC"/>
-          <circle cx="27" cy="24" r="1.4" fill="#D42B2B"/>
-        </svg>
-        <span class="logo-text" style="color:var(--white)">NEX<span>CORE</span></span>
+        <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 35px; width: auto; margin-right: 10px;">
+        <span class="logo-text" style="color:var(--white)">BUGHAZ<span>DIGITAL</span></span>
       </div>
       <p>Infrastructure de classe mondiale, opérée par des experts passionnés. Votre partenaire pour la continuité numérique.</p>
     </div>
@@ -551,7 +537,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 NexCore DataCenter — Tous droits réservés</p>
+    <p>© 2026 Bughaz Digital DataCenter — Tous droits réservés</p>
     <div class="footer-badges">
       <span class="fbadge">Tier IV</span>
       <span class="fbadge">ISO 27001</span>
