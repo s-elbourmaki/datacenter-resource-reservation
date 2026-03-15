@@ -16,7 +16,7 @@
 <!-- ═══════════ PRELOADER ═══════════ -->
 <div class="preloader" id="preloader">
   <div class="preloader-logo">
-    <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 60px; width: auto; margin-bottom: 10px;">
+    <img src="{{ asset('images/logo_bughazdigital.png') }}" alt="Bughaz Digital" style="height: 107px; width: auto; margin-bottom: 10px;">
     <div>BUGHAZ<span>DIGITAL</span></div>
   </div>
   <div class="preloader-bar"><div class="preloader-fill"></div></div>

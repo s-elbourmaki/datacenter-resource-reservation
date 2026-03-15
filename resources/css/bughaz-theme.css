@@ -1,17 +1,17 @@
 /* resources/css/bughaz-theme.css */
 :root {
     /* --- BUGHAZ DIGITAL COLORS --- */
-    --nc-red:      #D42B2B;
+    --nc-red: #D42B2B;
     --nc-red-dark: #B02020;
-    --nc-white:    #FFFFFF;
-    --nc-ice:      #A8D4DC;
-    --nc-ice-light:#DCF0F4;
+    --nc-white: #FFFFFF;
+    --nc-ice: #A8D4DC;
+    --nc-ice-light: #6ecee1;
     --nc-ice-pale: #EBF6F9;
-    --nc-steel:    #3A7BA8;
-    --nc-navy:     #1A2F52;
-    --nc-navy-dk:  #0F1D35;
-    --nc-muted:    #5E7A9A;
-    --nc-grey-bg:  #F4F6F9;
+    --nc-steel: #3A7BA8;
+    --nc-navy: #1A2F52;
+    --nc-navy-dk: #0F1D35;
+    --nc-muted: #5E7A9A;
+    --nc-grey-bg: #F4F6F9;
 
     /* --- MAPPING TO SYSTEM VARIABLES --- */
     --primary: var(--nc-steel);
