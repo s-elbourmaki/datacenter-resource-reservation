@@ -12,7 +12,9 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-s--elbourmaki-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/s-elbourmaki/datacenter-resource-reservation) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](www.linkedin.com/in/salim-el-bourmaki-885304373)
-[Connectez-vous avec moi sur LinkedIn](www.linkedin.com/in/salim-el-bourmaki-885304373)
+<a href="https://www.linkedin.com/in/salim-el-bourmaki-885304373" target="_blank">
+  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+</a>
 </div>
 
 ---
