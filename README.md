@@ -12,7 +12,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-s--elbourmaki-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/s-elbourmaki/datacenter-resource-reservation) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](www.linkedin.com/in/salim-el-bourmaki-885304373)
-
+[Connectez-vous avec moi sur LinkedIn](www.linkedin.com/in/salim-el-bourmaki-885304373)
 </div>
 
 ---
